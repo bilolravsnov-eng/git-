@@ -5,6 +5,8 @@ import Navbar from './Coponents/Navbar'
 import Discover from './Coponents/Discover'
 import Serving from './Coponents/Serving'
 import GetSoftware from './Coponents/GetSoftware'
+import Pricing from './Coponents/Pricing'
+import Footer from './Coponents/Footer'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <Discover />
       <Serving />
       <GetSoftware />
+      <Pricing />
+      <Footer />
     </div>
   )
 }
