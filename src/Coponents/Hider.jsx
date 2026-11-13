@@ -1,54 +1,50 @@
-import React from 'react'
 
+import React from 'react'
 
 const Hider = () => {
     return (
-        <>
-            <div className="navbar bg-base-100 shadow-sm">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                        </div>
-                        <ul
-                            tabIndex={-1}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Feature</a></li>
-                        </ul>
+        <div className="w-full bg-white">
+            <div className="max-w-[1688px] mx-auto h-[120px] px-6 flex items-center justify-between">
+
+               
+                <div className="flex items-center gap-2">
+                    <div className="w-[38px] h-[38px] rounded-full bg-[#54dfb5] flex items-center justify-center">
+                        <div className="w-[15px] h-[15px] rounded-full bg-white"></div>
                     </div>
-                    <a className="btn btn-ghost text-xl">SOFT POINT</a>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul className="p-2 bg-base-100 w-40 z-1">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
-                </div>
-                <div className="navbar-endn">
-                    <a className="btn">Login</a>
-                    <a className="btn">Sign up</a>
 
+                    <h1 className="text-[27px] font-bold text-[#19dba5]">
+                        S<span className="text-[#ffcf45]">/</span>OFT P<span className="text-[#ffcf45]">/</span>INT
+                    </h1>
                 </div>
+
+               
+                <div className="flex items-center gap-[75px]">
+                    <a className="text-[25px] text-[#858d88] cursor-pointer">
+                        Feature
+                    </a>
+
+                    <a className="text-[25px] text-[#858d88] cursor-pointer">
+                        Download
+                    </a>
+
+                    <a className="text-[25px] text-[#858d88] cursor-pointer">
+                        Pricing
+                    </a>
+                </div>
+
+               
+                <div className="flex items-center gap-9">
+                    <button className="text-[25px] font-semibold text-[#505a53]">
+                        Login
+                    </button>
+
+                    <button className="w-[185px] h-[82px] bg-[#fa4144] rounded-[10px] text-white text-[25px] hover:bg-red-600 transition">
+                        Sign up
+                    </button>
+                </div>
+
             </div>
-        </>
-
+        </div>
     )
 }
 
